@@ -36,7 +36,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
-        check_elf_files: false,
 }
 
 android_app_import {
@@ -87,7 +86,7 @@ android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: ":timeservice_app_cert",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},

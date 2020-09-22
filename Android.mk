@@ -16,8 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-LOCAL_CHECK_ELF_FILES := false
-
 ifneq ($(filter beryllium dipper equuleus perseus polaris ursa,$(TARGET_DEVICE)),)
 
 endif
